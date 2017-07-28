@@ -28,6 +28,8 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/6685120e-7841-4ffb-a232-48d160ddbe4a/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/BTHO Website</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/6685120e-7841-4ffb-a232-48d160ddbe4a/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/BTHO Website</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +51,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights.TraceListener, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.TraceListener.2.2.0\lib\net45\Microsoft.ApplicationInsights.TraceListener.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -171,6 +176,7 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="ErrorHandler\AiHandleErrorAttribute.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -202,6 +208,39 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\cs-select.css" />
+    <Content Include="css\cs-skin-border.css" />
+    <Content Include="css\site.css" />
+    <Content Include="devlive\css\jquery.fancybox-1.3.4.css" />
+    <Content Include="devlive\css\page.html" />
+    <Content Include="devlive\images\blank.gif" />
+    <Content Include="devlive\images\fancybox-x.png" />
+    <Content Include="devlive\images\fancybox-y.png" />
+    <Content Include="devlive\images\fancybox.png" />
+    <Content Include="devlive\images\fancy_title_over.png" />
+    <Content Include="devlive\images\nav_bg.jpg" />
+    <Content Include="devlive\images\nav_devlive_logo.jpg" />
+    <Content Include="devlive\images\transparent.png" />
+    <Content Include="devlive\js\hoverintent.js" />
+    <Content Include="devlive\js\jquery-1.10.0.min.js" />
+    <Content Include="devlive\js\jquery-migrate.js" />
+    <Content Include="devlive\js\jquery-ui-1.9.2.custom.js" />
+    <Content Include="devlive\js\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="devlive\js\jquery.flexnav.js" />
+    <Content Include="devlive\js\popup.js" />
+    <Content Include="devlive\menucss2.css" />
+    <Content Include="devlive\reset-min.css" />
+    <Content Include="devlive\sitecss009e.css" />
+    <Content Include="devlive\sitecss0ea6.css" />
+    <Content Include="devlive\sitecss17ac.css" />
+    <Content Include="devlive\sitecss4942.css" />
+    <Content Include="devlive\sitecss4958.css" />
+    <Content Include="devlive\sitecss5f01.css" />
+    <Content Include="devlive\sitecssa68b.css" />
+    <Content Include="devlive\sitecsscd55.css" />
+    <Content Include="devlive\sitecsse568.css" />
+    <Content Include="devlive\sitecssebe4.css" />
+    <Content Include="devlive\sitecssf1b6.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -209,6 +248,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Connected Services\Application Insights\ConnectedService.json" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -218,11 +258,96 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="fonts\icomoon\icomoon2ec0-2.html" />
+    <Content Include="fonts\icomoon\icomoon2ec0-3.html" />
+    <Content Include="fonts\icomoon\icomoon2ec0-4.html" />
+    <Content Include="fonts\icomoon\icomoon2ec0.html" />
+    <Content Include="fonts\icomoon\icomoond41d.html" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\14Nov_UnitiEdge_3-Wheatland.jpg" />
+    <Content Include="images\14Nov_UnitiEdge_4-Sedona.jpg" />
+    <Content Include="images\14Nov_UnitiEdge_5-Montana.jpg" />
+    <Content Include="images\airy_kitchen.jpg" />
+    <Content Include="images\Aspen Thumbnail.JPG.jpg" />
+    <Content Include="images\bathroom_bg.jpg" />
+    <Content Include="images\bayside100x71.jpg" />
+    <Content Include="images\btho_logo.png" />
+    <Content Include="images\btho_main_logo.svg" />
+    <Content Include="images\buyhome_icon.png" />
+    <Content Include="images\canallanding_logo.jpg" />
+    <Content Include="images\Caraway thumbnail.JPG.jpg" />
+    <Content Include="images\Cardston2.jpg" />
+    <Content Include="images\Cardston_SF8_4.jpg" />
+    <Content Include="images\check_bullet.svg" />
+    <Content Include="images\clipboard_icon.png" />
+    <Content Include="images\clock_icon.png" />
+    <Content Include="images\close_sq.html" />
+    <Content Include="images\close_sqhov.html" />
+    <Content Include="images\Columbia2.jpg" />
+    <Content Include="images\creekwood_small.png" />
+    <Content Include="images\dark_bedroom_cardston.jpg" />
+    <Content Include="images\dark_spare_room.jpg" />
+    <Content Include="images\designer_living_room.jpg" />
+    <Content Include="images\dining_table_dark.jpg" />
+    <Content Include="images\dining_to_den.jpg" />
+    <Content Include="images\Edgefield_logo.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\facebook.svg" />
+    <Content Include="images\fairways_small.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\fireside_logo_flame.png" />
+    <Content Include="images\Harbourthumbnail.jpg" />
+    <Content Include="images\hawk_small.png" />
+    <Content Include="images\homekey_icon.png" />
+    <Content Include="images\house_icon.png" />
+    <Content Include="images\jensen_small.png" />
+    <Content Include="images\jesperdale_small.png" />
+    <Content Include="images\kinniburgh.jpg" />
+    <Content Include="images\Lakeport2.jpg" />
+    <Content Include="images\lakeport2_bedroom.jpg" />
+    <Content Include="images\lakes_small.png" />
+    <Content Include="images\laptop_icon.png" />
+    <Content Include="images\living_room_fireplace.jpg" />
+    <Content Include="images\luxury_bathroom.jpg" />
+    <Content Include="images\Montgomery.jpg" />
+    <Content Include="images\montgomery_exterior.jpg" />
+    <Content Include="images\newcastle_small.png" />
+    <Content Include="images\palisades_small.png" />
+    <Content Include="images\picket_fence.jpg" />
+    <Content Include="images\pricetag_icon.png" />
+    <Content Include="images\rainbow_logo.png" />
+    <Content Include="images\RBH_Juniper__Ext.jpg" />
+    <Content Include="images\rbh_logo.svg" />
+    <Content Include="images\rbh_showhome.jpg" />
+    <Content Include="images\Ridgeway.jpg" />
+    <Content Include="images\riverside_small.png" />
+    <Content Include="images\rosenthal_small.png" />
+    <Content Include="images\Sage Thumbnail 2.JPG.jpg" />
+    <Content Include="images\Sierra.jpg" />
+    <Content Include="images\silverstone_small.png" />
+    <Content Include="images\silver_living_room.jpg" />
+    <Content Include="images\sold_icon.png" />
+    <Content Include="images\spruceridgelogo.png" />
+    <Content Include="images\Tempest2.jpg" />
+    <Content Include="images\Texan3.jpg" />
+    <Content Include="images\Texan4.jpg" />
+    <Content Include="images\thinbars.png" />
+    <Content Include="images\Tuscany.jpg" />
+    <Content Include="images\uppercarlton_small.png" />
+    <Content Include="images\verte_small.png" />
+    <Content Include="images\warm_bedroom.jpg" />
+    <Content Include="images\webber_small.png" />
+    <Content Include="images\westmere_logo.png" />
+    <Content Include="js\classie.js" />
+    <Content Include="js\community_maps.js" />
+    <Content Include="js\selectFx.js" />
+    <Content Include="maxcdn.bootstrapcdn.com\font-awesome\4.5.0\css\font-awesome.min.css" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\_LayoutMaster.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -256,6 +381,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

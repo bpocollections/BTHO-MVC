@@ -14,10 +14,6 @@
     <script src="devlive/js/popup.js" type="text/javascript"></script>
     <link rel="stylesheet" href="devlive/menucss2.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/site.css" />
-    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
-    <script src="~/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
-    <script src="~/Scripts/bootstrap.js" type="text/javascript"></script>
-
     <script src="devlive/js/jquery-1.10.0.min.js" type="text/javascript"></script>
     <script src="devlive/js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
     <script src="devlive/js/jquery-migrate.js" type="text/javascript"></script>
@@ -25,18 +21,16 @@
     <script src="devlive/js/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="images/favicon.ico" />
     <script type='text/javascript'>
-        var appInsights = window.appInsights || function (config) {
-            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } }
-            var t = { config: config }, u = document, e = window, o = 'script', s = u.createElement(o), i, f; for (s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js', u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length;)r('track' + i.pop()); return r('setAuthenticatedUserContext'), r('clearAuthenticatedUserContext'), config.disableExceptionTracking || (i = 'onerror', r('_' + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o), s }), t
-        }({
-            instrumentationKey: 'ae5ab214-1f12-4d07-94bb-a1b277956b1a'
-        });
+            var appInsights = window.appInsights || function (config) {
+                function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } }
+                var t = { config: config }, u = document, e = window, o = 'script', s = u.createElement(o), i, f; for (s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js', u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length;)r('track' + i.pop()); return r('setAuthenticatedUserContext'), r('clearAuthenticatedUserContext'), config.disableExceptionTracking || (i = 'onerror', r('_' + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o), s }), t
+            }({
+                instrumentationKey: 'ae5ab214-1f12-4d07-94bb-a1b277956b1a'
+            });
 
-        window.appInsights = appInsights;
-        appInsights.trackPageView();
+            window.appInsights = appInsights;
+            appInsights.trackPageView();
     </script>
-
-    
 </head>
 <body class="admin_area" style="font-family:Helvetica,Arial,sans-serif;">
     <div id="banner">
@@ -95,29 +89,29 @@
     </nav>
     <script type="text/javascript" src="devlive/js/jquery.flexnav.js"></script>
     <script>
-        var fnav = $("#sitemenu .flexnav").flexNav({
-            'animationSpeed': 250,            // default for drop down animation speed
-            'transitionOpacity': true,           // default for opacity animation
-            'buttonSelector': '.menubutton', // default menu button class name
-            'hoverIntent': true,          // Change to true for use with hoverIntent plugin
-            'hoverIntentTimeout': 800,            // hoverIntent default timeout
+  var fnav=$("#sitemenu .flexnav").flexNav({
+  'animationSpeed':     250,            // default for drop down animation speed
+  'transitionOpacity':  true,           // default for opacity animation
+  'buttonSelector':     '.menubutton', // default menu button class name
+  'hoverIntent':        true,          // Change to true for use with hoverIntent plugin
+  'hoverIntentTimeout': 800,            // hoverIntent default timeout
 
-            'calcItemWidths': false,          // dynamically calcs top level nav item widths
-            'hover': true            // would you like hover support?
-        });
-        var fnav1 = $("#suckertreemenu1 .flexnav").flexNav({
-            'animationSpeed': 250,            // default for drop down animation speed
-            'transitionOpacity': true,           // default for opacity animation
-            'buttonSelector': '.menu-button', // default menu button class name
-            'hoverIntent': true,          // Change to true for use with hoverIntent plugin
-            'hoverIntentTimeout': 150,            // hoverIntent default timeout
-            'calcItemWidths': false,          // dynamically calcs top level nav item widths
-            'hover': true            // would you like hover support?
-        });
+  'calcItemWidths':     false,          // dynamically calcs top level nav item widths
+  'hover':              true            // would you like hover support?
+});
+  var fnav1=$("#suckertreemenu1 .flexnav").flexNav({
+  'animationSpeed':     250,            // default for drop down animation speed
+  'transitionOpacity':  true,           // default for opacity animation
+  'buttonSelector':     '.menu-button', // default menu button class name
+  'hoverIntent':        true,          // Change to true for use with hoverIntent plugin
+  'hoverIntentTimeout': 150,            // hoverIntent default timeout
+  'calcItemWidths':     false,          // dynamically calcs top level nav item widths
+  'hover':              true            // would you like hover support?
+});
 
-        if (navigator.platform == "Win16" || navigator.platform == "Win32" || navigator.platform == "WinCE") {
-            $("html").addClass("platform_windows");
-        }
+if (navigator.platform == "Win16" || navigator.platform == "Win32" || navigator.platform == "WinCE") {
+	$( "html" ).addClass( "platform_windows" );
+}
 
     </script>
     <link rel="stylesheet" type="text/css" href="devlive/sitecssf1b6.css?id=13689" />
@@ -128,7 +122,7 @@
                 <div style="width: 100%; margin: 10px 0px;" class="content_box" id="current12169">
                     <div class="resultcontent">
                         <div id="resultcon_inner" style="padding-left:3px;padding-right:3px;">
-                            @RenderBody
+                          @RenderBody
                         </div>
                         <div style="clear:both;"></div>
                     </div>
@@ -158,35 +152,35 @@
             <li><a href="About/Privacy-Policy.html">Privacy Policy</a></li>
         </ul>
         <script>
-            function svgasimg() {
-                return document.implementation.hasFeature(
-                    "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
-            }
+function svgasimg() {
+  return document.implementation.hasFeature(
+    "http://www.w3.org/TR/SVG11/feature#Image", "1.1");
+}
 
-            if (!svgasimg()) {
-                var e = document.getElementsByTagName("img");
-                if (!e.length) {
-                    e = document.getElementsByTagName("IMG");
-                }
-                for (var i = 0, n = e.length; i < n; i++) {
-                    var img = e[i],
-                        src = img.getAttribute("src");
-                    if (src.match(/svgz?$/)) {
-                        /* URL ends in svg or svgz */
-                        img.setAttribute("src",
-                            img.getAttribute("data-fallback"));
-                    }
-                }
-            }
+if (!svgasimg()){
+  var e = document.getElementsByTagName("img");
+  if (!e.length){
+    e = document.getElementsByTagName("IMG");
+  }
+  for (var i=0, n=e.length; i<n; i++){
+    var img = e[i],
+        src = img.getAttribute("src");
+    if (src.match(/svgz?$/)) {
+      /* URL ends in svg or svgz */
+      img.setAttribute("src",
+             img.getAttribute("data-fallback"));
+    }
+  }
+}
 
-            $(document).ready(function () {
-                if (navigator.userAgent.indexOf('Mac OS X') != -1) {
-                    //do nothing
-                } else {
-                    $("body").addClass("pc");
-                }
+$( document ).ready(function() {
+if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+  //do nothing
+} else {
+  $("body").addClass("pc");
+}
 
-            });
+});
 
         </script>
         <div style="width: 100%; clear: both; height: 25px;" id="default_footer2">
