@@ -5,15 +5,48 @@
         Return View()
     End Function
 
-    Function About() As ActionResult
-        ViewData("Message") = "Your application description page."
-
+    Function LearnHowItWorks() As ActionResult
         Return View()
     End Function
 
-    Function Contact() As ActionResult
-        ViewData("Message") = "Your contact page."
-
+    Function ProgramBenefits() As ActionResult
         Return View()
     End Function
+
+    Function ViewProperties() As ActionResult
+        Return View()
+    End Function
+
+    Function OurLocations() As ActionResult
+        Return View()
+    End Function
+
+    Function OurBuilders() As ActionResult
+        Return View()
+    End Function
+
+    Function ApplyNow() As ActionResult
+        Return View()
+    End Function
+
+    Function AboutUs() As ActionResult
+        Return View()
+    End Function
+
+    Function WhyUs() As ActionResult
+        Return View()
+    End Function
+
+    Function FAQ() As ActionResult
+        Return View()
+    End Function
+
+    Function ContactUs() As ActionResult
+        Return View()
+    End Function
+
+    Function PrivacyPolicy() As ActionResult
+        Return View()
+    End Function
+
 End Class

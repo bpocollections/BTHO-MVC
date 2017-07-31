@@ -5,10 +5,10 @@
     <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta charset="UTF-8">
-   <title>Bridge to Homeownership</title>
+  
 
 
- 
+    <link rel="shortcut icon" href="~/images/favicon.ico">
     <link rel="stylesheet" href="~/Content/menucss2.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="~/Content/site.css" />
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
@@ -46,41 +46,41 @@
     <div class="menubutton">Menu</div><nav id="sitemenu">
         <ul class="flexnav" data-breakpoint="800">
             <li>
-                <a class="mainfoldericon" href="#">Home</a>
+                <a class="mainfoldericon" href="@Url.Action("Index", "Home")">Home</a>
             </li>
             <li>
-                <a class="mainfoldericon" href="#">Learn How It Works</a>
+                <a class="mainfoldericon" href="@Url.Action("LearnHowItWorks", "Home")">Learn How It Works</a>
             </li>
             <li>
-                <a class="mainfoldericon" href="#">Program Benefits</a>
+                <a class="mainfoldericon" href="@Url.Action("ProgramBenefits", "Home")">Program Benefits</a>
             </li>
             <li class="item-with-ul">
                 <a class="mainfoldericon">View Our Properties</a>
                 <ul>
                     <li>
-                        <a class="subfoldericon" href="#">View Properties</a>
+                        <a class="subfoldericon" href="@Url.Action("ViewProperties", "Home")">View Properties</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="#">Our Locations</a>
+                        <a class="subfoldericon" href="@Url.Action("OurLocations", "Home")">Our Locations</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="#">Our Builders</a>
+                        <a class="subfoldericon" href="@Url.Action("OurBuilders", "Home")">Our Builders</a>
                     </li>
                 </ul>
             <li>
-                <a class="mainfoldericon" href="#">Apply Now</a>
+                <a class="mainfoldericon" href="@Url.Action("ApplyNow", "Home")">Apply Now</a>
             </li>
             <li class="item-with-ul">
                 <a class="mainfoldericon">About</a>
                 <ul>
                     <li>
-                        <a class="subfoldericon" href="#">About Us</a>
+                        <a class="subfoldericon" href="@Url.Action("AboutUs", "Home")">About Us</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="#">Why Us</a>
+                        <a class="subfoldericon" href="@Url.Action("WhyUs", "Home")">Why Us</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="#">FAQ</a>
+                        <a class="subfoldericon" href="@Url.Action("FAQ", "Home")">FAQ</a>
                     </li>
                     
         </ul>
@@ -167,15 +167,15 @@
 
     <div id="footer">
         <p id="footer_capt"></p>
-        <a class="logo" href="Home.html"><img src="~/images/btho_main_logo.svg" alt="Bridge to Homeownership" data-fallback="/images/btho_logo.png" /></a>
+        <a class="logo" href="@Url.Action("Index", "Home")"><img src="~/images/btho_main_logo.svg" alt="Bridge to Homeownership" data-fallback="/images/btho_logo.png" /></a>
     
         
         <ul class="text-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Why Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="@Url.Action("AboutUs", "Home")">About Us</a></li>
+            <li><a href="@Url.Action("WhyUs", "Home")">Why Us</a></li>
+            <li><a href="@Url.Action("ContactUs", "Home")">Contact Us</a></li>
+            <li><a href="@Url.Action("FAQ", "Home")">FAQ</a></li>
+            <li><a href="@Url.Action("PrivacyPolicy", "Home")">Privacy Policy</a></li>
         </ul>
         
     </div>
