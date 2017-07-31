@@ -12,7 +12,8 @@ body {
     position: relative;
     height: auto !important;
     min-height: 100%; 
-   max-width:100%;
+    overflow-x:hidden;
+ 
 }
 
 .clearfix:after {
@@ -37,7 +38,12 @@ body {
     width: auto;
     margin: 0 auto;
     clear: both;
-    background: #fff
+    /*background: #fff*/
+    background: rgba(0, 127, 182, 0.62); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top,rgba(0, 127, 182, 0.1), white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right,rgba(0, 127, 182, 0.1), white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(0, 127, 182, 0.1), white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(0, 127, 182, 0.1), white); /* Standard syntax */
 }
 
 #maincontent {
@@ -339,7 +345,7 @@ ul#breadcrumb {
         }
 
 #maincontent .clipboard span:before {
-    background: url(../clipboard_icon.png) no-repeat scroll 50% top transparent
+    background: url(../images/clipboard_icon.png) no-repeat scroll 50% top transparent
 }
 
 #maincontent .pricetag span:before {
@@ -491,7 +497,10 @@ ul#breadcrumb {
 #maincontent .scroll_section {
     padding: 40px;
     text-align: center;
-    position: relative
+    position: relative;
+    border-bottom: solid;
+    border-bottom-color: #a6cc38;
+    border-bottom-width:10px;
 }
 
     #maincontent .scroll_section .scroll_pos {
@@ -1502,3 +1511,8 @@ body.pc #maincontent p, body.pc #maincontent .btn, body.pc #maincontent .field_w
         height: 50%;
         clear:both;
     }
+
+#home_3 {
+    background-image: url("/images/magnet-kitchen-in-Romsey1.jpg");
+    background-size: cover;
+}

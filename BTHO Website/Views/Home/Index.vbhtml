@@ -2,85 +2,33 @@
     ViewData("Title") = "Home Page"
 End Code
 <div class="scroll_section" id="home_1">
-    @*<div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="~/images/14Nov_UnitiEdge_3-Wheatland.jpg" alt="Los Angeles">
-            </div>
-
-            <div class="item">
+    
+    
+            <h1>Want to Own Your Own Home?</h1>
+            <p>Open the door to your new home...</p>
+            <p><a class="btn" href="#">Learn How it Works</a></p>
  
-                <img src="~/images/14Nov_UnitiEdge_4-Sedona.jpg" alt="Chicago">
-            </div>
-
-            <div class="item">
-                <img src="~/images/14Nov_UnitiEdge_5-Montana.jpg" alt="New York">
-            </div>
-        </div>
-
-
-    </div>*@
-
-    <div id="carousel-header" class="carousel slide" data-ride="carousel" style="width:92%;">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-header" data-slide-to="1"></li>
-            <li data-target="#carousel-header" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="item active">
-                <a href="#"><img src="~/images/Title1.png" /></a>
-                <div class="carousel-caption">
-                    <h3>Title 1</h3>
-                    <p>Subtitle 1</p>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#"><img src="~/images/Title2.png" /></a>
-                <div class="carousel-caption">
-                    <h3>Title 2</h3>
-                    <p>Subtitle 2</p>
-                </div>
-            </div>
-            <div class="item">
-                <a href="#"><img src="~/images/Title3.png" /></a>
-                <div class="carousel-caption">
-                    <h3>Title 3</h3>
-                    <p>Subtitle 3</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
 </div>
 
 
 <div class="scroll_section" id="home_2">
-    <h2 style="color: #007fb6;">Heading 2</h2>
+    <h2 style="color: #007fb6;">Benefits of the Program</h2>
     <ul class="fancy">
-        <li><span>Item 1</span></li>
-        <li><span>Item 2</span></li>
-
+        <li><span>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</span></li>
+        <li><span>Sed posuere consectetur est at lobortis.</span></li>
+        <li><span>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</span></li>
+        <li><span>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span></li>
+        <li><span>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</span></li>
     </ul>
-
+    <a class="icon_link clipboard" href="#"><span>How It Works</span> Move in while you rent</a> 
+    <a class="icon_link house" href="#"><span>View Our Properties</span> Vast array of brand new homes</a> 
+    <a class="icon_link pricetag" href="#"><span>Apply Now</span> It&#39;s easy to get started</a>
 </div>
 <div class="scroll_section" id="home_3">
-    <h2 class="outlined">Heading Three</h2>
-    <p>Text goes here</p>
-
+    <h2 class="outlined">Why Choose Us?</h2>
+    <p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
+    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <a class="btn" href="#">Apply Now</a>
 </div>
-
-
-
-
-<div style="padding-bottom:1000px"></div>
+ 

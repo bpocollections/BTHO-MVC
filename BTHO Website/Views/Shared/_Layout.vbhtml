@@ -40,58 +40,49 @@
 
 
     <div id="banner">
-        <a href="Home.html"><img class="logo" src="images/btho_main_logo.svg" alt="Bridge to Homeownership" /></a>
+        <a href="Home.html"><img class="logo" src="~/images/btho_main_logo.svg" alt="Bridge to Homeownership" /></a>
     </div>
   
     <div class="menubutton">Menu</div><nav id="sitemenu">
         <ul class="flexnav" data-breakpoint="800">
             <li>
-                <a class="mainfoldericon" href="index.html">Home</a>
+                <a class="mainfoldericon" href="#">Home</a>
             </li>
             <li>
-                <a class="mainfoldericon" href="How-the-Program-Works.html">Learn How It Works</a>
+                <a class="mainfoldericon" href="#">Learn How It Works</a>
             </li>
             <li>
-                <a class="mainfoldericon" href="mortgage.html">Program Benefits</a>
+                <a class="mainfoldericon" href="#">Program Benefits</a>
             </li>
             <li class="item-with-ul">
-                <a class="mainfoldericon">View Our Listings</a>
+                <a class="mainfoldericon">View Our Properties</a>
                 <ul>
                     <li>
-                        <a class="subfoldericon" href="View-Our-Listings/View-Inventory.html">View Inventory</a>
+                        <a class="subfoldericon" href="#">View Properties</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="View-Our-Listings/Our-Communities.html">Our Communities</a>
+                        <a class="subfoldericon" href="#">Our Locations</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="View-Our-Listings/Reidbuilt-Homes.html">ReidBuilt Homes</a>
+                        <a class="subfoldericon" href="#">Our Builders</a>
                     </li>
                 </ul>
             <li>
-                <a class="mainfoldericon" href="Pre-Approved-Credit.html">Get Pre Approved Now</a>
+                <a class="mainfoldericon" href="#">Apply Now</a>
             </li>
             <li class="item-with-ul">
                 <a class="mainfoldericon">About</a>
                 <ul>
                     <li>
-                        <a class="subfoldericon" href="About/About-Us.html">About Us</a>
+                        <a class="subfoldericon" href="#">About Us</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="About/Why-Us.html">Why Us</a>
+                        <a class="subfoldericon" href="#">Why Us</a>
                     </li>
                     <li>
-                        <a class="subfoldericon" href="About/FAQ.html">FAQ</a>
+                        <a class="subfoldericon" href="#">FAQ</a>
                     </li>
-                    <li>
-                        <a class="subfoldericon" href="About/Privacy-Policy.html">Privacy Policy</a>
-                    </li>
-                </ul>
-            <li>
-                <a class="mainfoldericon" href="Contact-Us.html">Contact</a>
-            </li>
-            <li>
-                <a class="mainfoldericon" href="Thank-You.html">Thank You</a>
-            </li>
+                    
         </ul>
     </nav>
     <script type="text/javascript" src="~/Scripts/jquery.flexnav.js"></script>
@@ -126,9 +117,45 @@
         <div id="maincontent">
             <div id="page_info"> </div>
             <div id="content" style="">
-                <div style="width: 100%; margin: 10px 0px;" class="content_box">
+                <div style="width: 90%; margin: 10px 0px;" class="content_box">
                     <div class="resultcontent">
                         <div id="resultcon_inner" style="padding-left:3px;padding-right:3px;">
+
+
+
+                            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a href="#"><img src="/images/Title1.png" /></a>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img src="/images/Title2.png" /></a>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img src="/images/Title3.png" /></a>
+                                        <div class="carousel-caption">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                             
+                            </div>
+
+
+
                             @RenderBody
                         </div>
                         <div style="clear:both;"></div>
@@ -141,20 +168,14 @@
     <div id="footer">
         <p id="footer_capt"></p>
         <a class="logo" href="Home.html"><img src="~/images/btho_main_logo.svg" alt="Bridge to Homeownership" data-fallback="/images/btho_logo.png" /></a>
+    
+        
         <ul class="text-links">
-            <li><a href="Learn-How-It-Works.html">How The Program Works</a></li>
-            <li><a href="Get-Pre-Approved-Now.html">The Program - Get Pre-Approved Today</a></li>
-            <li><a href="view-our-listings.html">Inventory</a></li>
-            <li><a href="View-Our-Listings/ReidBuilt-Homes-2.html">ReidBuilt Homes</a></li>
-        </ul>
-        <ul class="text-links">
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="About/Why-Us.html">Why Us</a></li>
-        </ul>
-        <ul class="text-links">
-            <li><a href="Contact.html">Contact Us</a></li>
-            <li><a href="About/FAQ.html">FAQ</a></li>
-            <li><a href="About/Privacy-Policy.html">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Why Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
         </ul>
         
     </div>
