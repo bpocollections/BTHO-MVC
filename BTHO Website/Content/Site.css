@@ -1097,7 +1097,7 @@ body.pc #maincontent p, body.pc #maincontent .btn, body.pc #maincontent .field_w
     font-size: 28px;
     font-family: 'Avenir W01',Helvetica,Arial,Sans-serif;
     text-transform: uppercase;
-    vertical-align: middle
+    /*vertical-align: middle*/
 }
 
     .menubutton:before {
